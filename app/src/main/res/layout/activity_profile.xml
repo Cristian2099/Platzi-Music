@@ -11,5 +11,36 @@
         android:layout_gravity="center"
         android:src="@drawable/logo"/>
 
+    <EditText
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/vector_person"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/vector_lock"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:backgroundTint="@color/green_platzi"
+        android:text="@string/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
 
 </LinearLayout>
