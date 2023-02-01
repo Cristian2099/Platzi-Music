@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white">
 
     <ImageView
+        android:id="@+id/imgLogo"
         android:layout_width="160dp"
         android:layout_height="120dp"
-        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/logo"/>
 
     <EditText
+        android:id="@+id/etUser"
         android:layout_margin="12dp"
+        android:layout_below="@id/imgLogo"
         android:drawableStart="@drawable/vector_person"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:drawablePadding="12dp"
         android:hint="@string/hint_user"
         android:layout_width="match_parent"
@@ -21,7 +26,11 @@
         />
 
     <EditText
+        android:id="@+id/etPass"
         android:layout_margin="12dp"
+        android:layout_below="@id/etUser"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:drawableStart="@drawable/vector_lock"
         android:drawablePadding="12dp"
         android:hint="@string/hint_password"
@@ -29,13 +38,12 @@
         android:layout_height="wrap_content"
         />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        />
-
     <Button
+        android:id="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
         android:backgroundTint="@color/green_platzi"
         android:text="@string/btn_login"
         android:layout_width="match_parent"
@@ -43,4 +51,4 @@
         />
 
 
-</LinearLayout>
+</RelativeLayout>
